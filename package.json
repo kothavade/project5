@@ -19,13 +19,13 @@
     "@types/node": "^18.16.1",
     "@types/node-geocoder": "^4.2.1",
     "eslint": "^8.39.0",
-    "nuxt": "^3.4.3",
-    "prisma": "^4.13.0",
     "typescript": "^5.0.4",
     "vue-tsc": "^1.4.4"
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
+    "nuxt": "^3.4.3",
+    "prisma": "^4.13.0",
     "@prisma/client": "^4.13.0",
     "@trpc/client": "^10.21.1",
     "@trpc/server": "^10.21.1",
