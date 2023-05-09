@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --max-warnings 0 .",
+    "typecheck": "nuxt typecheck",
+    "start": "NODE_ENV=production node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^0.4.5",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.0.2",
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@sidebase/nuxt-auth": "0.5",
+    "@types/node": "^18.16.1",
+    "@types/node-geocoder": "^4.2.1",
+    "eslint": "^8.39.0",
+    "nuxt": "^3.4.3",
+    "prisma": "^4.13.0",
+    "typescript": "^5.0.4",
+    "vue-tsc": "^1.4.4"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.0.17",
+    "@prisma/client": "^4.13.0",
+    "@trpc/client": "^10.21.1",
+    "@trpc/server": "^10.21.1",
+    "@vue-leaflet/vue-leaflet": "^0.9.0",
+    "argon2": "^0.30.3",
+    "daisyui": "^2.51.6",
+    "leaflet": "^1.9.3",
+    "next-auth": "^4.22.1",
+    "node-geocoder": "^4.2.0",
+    "superjson": "^1.12.3",
+    "trpc-nuxt": "^0.9.0",
+    "zod": "^3.21.4"
+  }
+}

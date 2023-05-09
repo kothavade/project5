@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // NOTE: You probably want to change this to another database later on
+  provider = "sqlite"
+
+  // This value is read from the .env file.
+  url = env("DATABASE_URL")
+}
+
+// First Name (String)
+// Last Name (String)
+// Address (String)
+// Phone (String)
+// Email (String)
+// Mr./Mrs./Ms./Dr. (String)
+// Contact By Mail (Boolean)
+// Contact By Phone (Boolean)
+// Contact BY Email (Boolean)
+// Latitude (Real)
+// Longitude (Real)
+
+// TODO: Enums are not supported by SQLite, enable when migrating to PostgreSQL
+// enum Title {
+//   MR
+//   MRS
+//   MS
+//   DR
+// }
+
+model Contact {
+  id             Int     @id @default(autoincrement())
+  firstName      String
+  lastName       String
+  address        String
+  phone          String
+  email          String
+  title          String
+  contactByMail  Boolean
+  contactByPhone Boolean
+  contactByEmail Boolean
+  latitude       Float
+  longitude      Float
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+}
